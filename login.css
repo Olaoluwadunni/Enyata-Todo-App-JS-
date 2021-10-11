@@ -1,0 +1,144 @@
+html {
+    height: 100%;
+}
+body {
+   /* background-image: url(""),linear-gradient(-70deg, #09B9B0, #4F5EBD);*/
+    height: 100vh;
+    display: flex;
+    margin: 0px;
+    font-family: open sans;
+    color: #B2B2B2;
+    flex-direction: column;
+}
+.wrapper   {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 160px;
+}
+.img-fluid {
+    width: 800px;
+    height: 500px;
+    border-style: none;
+    box-sizing: border-box;
+}
+.header {
+    display: flex;
+    margin-right: 1800px;
+    margin-top: 20px;
+}
+.image {
+    margin-right: 220px;
+}
+.container {
+    width: 570px;
+    height: 600px;
+    border: none;
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 10px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.signup {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    font-size: 16px;
+    margin-top: 5px;
+}
+img {
+    width: 85px;
+    height: 47px;
+    padding-left: 23px;
+    margin-top: 0px;
+}
+.signup span {
+    font-size: 16px;
+    border-radius:10px;
+    margin-left: 15px;
+    color: #4F5EBD;
+    font-weight: 800;
+}
+.signup a {
+    text-decoration: none;
+}
+.Intro{
+    padding-left: 50px;
+}
+.Intro h2 {
+    color:  rgb(37, 208, 191);
+    margin-top: 35px;
+    font-size: 30px;
+}
+.Intro p {
+    font-size: 14px;
+    margin-top:30px;
+    margin-bottom: 10px;
+}
+#email {
+    margin: 0;
+}
+input {
+    margin-top:25px;
+    width:450px ;
+    height:25px ;
+    color: #B2B2B2;
+    padding: 8px;
+}
+#NoMargin {
+    margin-top: 0;
+}
+.FormQ {
+    margin-top: 0px;
+    font-size: 14px;
+    line-height: 0;
+    margin-left: 319px;
+}
+.login {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.login button {
+    width: 470px;
+    height: 45px;
+    margin-top: 25px;
+    border-radius: 10px;
+    background-image: linear-gradient(to left, #74ebd5, #9face6);
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.line {
+    width: 70px;
+    height: 40px;
+    border: solid;
+    border-width: thin;
+}
+.liners {
+    display: flex;
+    /* margin-top: 25px; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+}
+.invalid {
+    border-color: red;
+}
+.valid  {
+    border-color: green;
+}
+.error  {
+    color: red;
+}
+.emailError {
+    color: red;
+}
