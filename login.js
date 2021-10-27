@@ -1,5 +1,11 @@
-const email = document.querySelector('#email');
+const email = document.querySelector('#email'); //email input box
 const emailError = document.querySelector('.emailError');
+const form = document.querySelector('#form'); //form tag
+const password = document.querySelector('#pass'); //password input box
+const error = document.querySelector('.error');
+const btn = document.querySelector('#logInButton');
+
+const p = document.querySelector('p')
 
 email.onblur = function (event) {
     console.log(event.target.value)
@@ -13,15 +19,7 @@ email.onfocus = function () {
     emailError.textContent = ""
 }
 
-// email.onfocus = function() {
-//     if (this.classList.includes('invalid')) {
-//         this.classList.remove('invalid')
-//     }
-//     // this.classList.add('valid');
-// }
-const password = document.querySelector('#pass');
-const error = document.querySelector('.error')
-console.log(password);
+// console.log(password);
  password.onblur  = function(event) {
      console.log(event.target.value)
      let pass = event.target.value;
@@ -32,3 +30,34 @@ console.log(password);
  password.onfocus = function () {
      error.textContent = ""
  }
+
+
+ btn.addEventListener("click", (e) => {
+     e.preventDefault();
+
+     const url = 'https://reqres.in/api/login';
+     fetch(url, {
+         method:'POST',
+         headers: {
+         Accept: "application/json, text/plain",
+             "Content-Type": "application/json"
+         },
+         body: JSON.stringify({
+             email: email.value,
+             password: password.value,
+         })
+     })
+     .then((res) => res.json())
+     .then(res => {
+         if (res.error) {
+             return p.textContent = res.error
+         }
+         p.textContent = 'Login successful'
+     }).catch((e) => console.log(e))
+ })
+
+
+
+
+ 
+

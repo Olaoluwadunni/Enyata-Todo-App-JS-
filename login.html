@@ -32,8 +32,8 @@
                 <p>Login to manage your account</p>
             </div>
             <div class="LoginForm">
-                <form action="">
-                    <input type="email" title='email' id="email" placeholder="Enter email" required>
+                <form action="" id='form'>
+                    <input type="email" title='email' id="email" placeholder="Enter email" value='' required>
                     <p class='emailError'></p>
                     <input type="password" title='password' id='pass' placeholder="Enter Password" minlength="8" size="8" autocomplete="current-password" required>
                     <p class='error'></p>
@@ -41,13 +41,14 @@
                         <p style='cursor:pointer'>Forgot your password?</p>
                     </div>
                     <div class="login">
-                        <button type="submit">LOG IN</button>
+                        <button type="submit" id='logInButton'>LOG IN</button>
                     </div>
                 </form>
             </div>
             <div class="signup">
                 <p>Don't have an account yet?</p>
             <a href="signup.html" class="reg"> <span>Sign Up</span></a>
+            <p></p>
             </div>
         </div>
     </div>
@@ -63,8 +64,8 @@
         //  }
         // });
     </script>
-    <script src='10-6.js'></script>
-    <!-- <script src='login.js'></script> -->
+    <!-- <script src='10-6.js'></script> -->
+    <script src='login.js'></script>
 
 </body>
 </html>
